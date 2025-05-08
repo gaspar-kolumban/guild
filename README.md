@@ -6,7 +6,7 @@
 - Support cache
 - Easily add any toolchain
 - Run stuff (like compile) lightly sandboxed
-- RUn stuff on remote machines
+- Run stuff on remote machines
 - Support to download dependencies
 
 ## Guidelines
