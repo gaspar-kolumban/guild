@@ -6,7 +6,7 @@ import yaml
 
 simple_build = """
 name: HelloWorld
-type: library
+type: c_library
 interfaces:
   - helloworld.h
 sources:
@@ -27,7 +27,7 @@ class TestYamlFormat(unittest.TestCase):
                 data = yaml.safe_load(file)
 
             self.assertEqual(data["name"], "HelloWorld")
-            self.assertEqual(data["type"], "library")
+            self.assertEqual(data["type"], "c_library")
             self.assertIn("helloworld.h", data["interfaces"])
             self.assertIn("helloworld.c", data["sources"])
             self.assertIn("main.c", data["sources"])
