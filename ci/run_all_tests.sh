@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
 set -e
 
-# Script is meant to be run from root of repo where the requirements file exists
+# Script is meant to be run from root of repo where the requirements file
+# and test folder exists
+
 REQ_FILE="requirements.txt"
 TEMP_DIR=$(mktemp --directory) 
 echo Using directory: $TEMP_DIR
